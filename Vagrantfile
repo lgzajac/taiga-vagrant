@@ -10,8 +10,9 @@ def configure_extra(config)
 end
 
 def configure(config)
-  config.vm.box = "xenial64"
-  config.vm.box_url = "https://cloud-images.ubuntu.com/xenial/current/xenial-server-cloudimg-amd64-vagrant.box"
+  config.vm.box = "bento/ubuntu-16.04"
+  #config.vm.box_url = "https://cloud-images.ubuntu.com/xenial/current/xenial-server-cloudimg-amd64-vagrant.box"
+
 
   # Disable automatic box update checking. If you disable this, then
   # boxes will only be checked for updates when the user runs
